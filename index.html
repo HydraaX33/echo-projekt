@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WARSZAWSKI PROJEKT | PRO RP</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="video-bg"></div>
+
+    <nav>
+        <div class="logo">WARSZAWSKI<span>PROJEKT</span></div>
+        <div class="nav-right">
+            <a href="https://discord.com/api/oauth2/authorize?client_id=1482317906946560151&redirect_uri=https%3A%2F%2Fhydraax33.github.io%2Fwarszawski-projekt%2F&response_type=token&scope=identify" id="login-btn" class="dc-btn">ZALOGUJ PRZEZ DC</a>
+            
+            <div id="user-info" class="user-pill hidden">
+                <img id="user-avatar" src="" alt="">
+                <span id="user-name"></span>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="hero">
+            <h1 class="glitch">STOLICA<span>RP</span></h1>
+            <p>Zaloguj się przez Discord, aby odblokować sklep i kupować usługi.</p>
+        </div>
+    </header>
+
+    <section id="shop" class="shop-grid">
+        <div class="glass-card">
+            <h2>CENNIK PREMIUM</h2>
+            <div class="items">
+                <div class="item"><span>3 POSTAĆ</span> <b>15 ZŁ</b> <button onclick="buy('3 POSTAĆ')" class="buy-btn disabled">KUP</button></div>
+                <div class="item"><span>UNBAN PERM</span> <b>90 ZŁ</b> <button onclick="buy('UNBAN PERM')" class="buy-btn disabled">KUP</button></div>
+                <div class="item"><span>LIMITKA</span> <b>60 ZŁ</b> <button onclick="buy('LIMITKA')" class="buy-btn disabled">KUP</button></div>
+                <div class="item"><span>CUSTOM PED</span> <b>29 ZŁ</b> <button onclick="buy('CUSTOM PED')" class="buy-btn disabled">KUP</button></div>
+            </div>
+            <p id="shop-msg">Zaloguj się, aby odblokować płatności.</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
